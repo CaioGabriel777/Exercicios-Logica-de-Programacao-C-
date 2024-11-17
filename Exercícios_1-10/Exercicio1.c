@@ -7,8 +7,10 @@
 int main(){
     setlocale(LC_ALL, "Portuguese");
     int baseR = 10, alturaR = 2, area, perimetro; 
+
     area = baseR * alturaR;
     perimetro = 2*(baseR + alturaR); 
+    
     printf("A area do retangulo eh: %d\n", area); 
     printf("O perimetro do retangulo eh: %d\n", perimetro); 
 

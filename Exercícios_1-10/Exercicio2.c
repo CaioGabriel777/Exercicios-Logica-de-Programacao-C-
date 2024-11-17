@@ -5,6 +5,7 @@
 
 int main(){
     int ladoQ = 10, areaQ, perimetroQ; 
+    
     areaQ = ladoQ * ladoQ;
     perimetroQ = 4 * ladoQ;
 
