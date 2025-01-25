@@ -10,8 +10,21 @@ inteiro. */
 #include <stdio.h>
 
 int main(){
-    
 
+    int num, numImpar = 1, numResultado, i = 0; 
+
+    printf("Digite um numero para tirar a raiz quadrada: ");
+    scanf("%d", &num); 
+
+    numResultado = num; 
+    while(numResultado > 0){
+        numResultado = num - numImpar;
+        numImpar += 2;
+        i++; 
+    }      
+
+    printf("A raiz de %d eh: %d", num, i);
+ 
 
     return 0;
 }
