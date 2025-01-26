@@ -18,12 +18,17 @@ int main(){
 
     numResultado = num; 
     while(numResultado > 0){
-        numResultado = num - numImpar;
+        numResultado -= numImpar;
         numImpar += 2;
         i++; 
     }      
 
-    printf("A raiz de %d eh: %d", num, i);
+    if(numResultado == 0){
+        printf("\nA raiz de %d eh: %d\n", num, i);
+    }else{
+        printf("A raiz de %d nao eh um numero exato", num);
+        printf("\nA raiz aproximada eh: %d", i);
+    }
  
 
     return 0;
